@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+    <title>Validador de Boleto Bancário</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="col-md-12">
+            <h1 class="text-center">Boleto Bancário</h1>
+            </br>
+            <p>Digite a linha digitável ou o código de barras para fazer a validação.<p>
+        </div>
+        </br>
+        <div class="col-md-12">
+            <form>
+                <div class="form-group">
+                    <label for="linhaDigitavel">Linha Digitável:</label>
+                    <input type="text" class="form-control" name="linhaDigitavel" id="linhaDigitavel" aria-describedby="helpId">
+                </div>
+                <input name="" id="" class="btn btn-primary" type="button" value="Calcular Barra" onclick="f_barra()">
+                </br></br>
+                <div class="form-group">
+                    <label for="codigoBarras">Código da Barra:</label>
+                    <input type="text" class="form-control" name="codigoBarras" id="codigoBarras" aria-describedby="helpId">
+                </div>
+                <input name="" id="" class="btn btn-primary" type="button" value="Calcular Linha" onclick="f_linha()">
+            </form>
+        </div>
+        </br>
+        <hr>
+        </br>
+
+        <div class="col-md-12">
+            <div class="form-group">
+                <label for="vencimento">Vencimento:</label>
+                <input type="text" class="form-control" name="vencimento" id="vencimento">
+            </div>
+            <div class="form-group">
+                <label for="valor">Valor:</label>
+                <input type="text" class="form-control" name="valor" id="valor">
+            </div>
+            <div class="form-group">
+                <label for="valor">Banco:</label>
+                <input type="text" class="form-control" name="banco" id="banco">
+            </div>
+            <div class="form-group">
+                <label for="valor">Moeda:</label>
+                <input type="text" class="form-control" name="moeda" id="moeda">
+            </div>
+            <input name="" id="" class="btn btn-primary" type="button" value="Limpar Campos" onclick="f_limpar()">
+        </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="js/jquery-3.3.1.slim.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/barras.js"></script>
+</body>
+
+</html>
