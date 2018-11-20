@@ -20,7 +20,7 @@ function f_venc() {
   if (codigoBarras.value.substr(5, 4) == 0)
     vencimento.value = 'O boleto pode ser pago em qualquer data';
   else
-    vencimento.value = fator_vencimento(codigoBarras.value.substr(5, 4)).substr(0,10);
+    vencimento.value = fator_vencimento(codigoBarras.value.substr(5, 4));
   valor.value = (codigoBarras.value.substr(9, 8) * 1) + ',' + codigoBarras.value.substr(17, 2);
 
   // seta o banco
